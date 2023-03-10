@@ -1,84 +1,56 @@
-@import "../../index.styles.scss";
-
 .Button {
     position: relative;
     background-color: var(--primary-color-3);
+    color: var(--primary-color-2);
     height: 48px;
     width: 200px;
-    font-family: var(--heading-font-bold);
-    transition: 300ms;
+    font-family: var(--body-font-semibold);
+
+    --button-transition: all 300ms;
+    transition: var(--button-transition);
 
     .halo {
         position: absolute;
         width: 100%;
         height: 100%;
         border: 1px solid var(--secondary-color-4);
-        opacity: 0.7;
+        opacity: 0.8;
+        transition: var(--button-transition);
     }
 
     .halo1 {
-        top: -4px;
-        left: 4px;
+        top: -6px;
+        left: 6px;
     }
 
     .halo2 {
-        bottom: -4px;
-        left: -4px;
+        bottom: -6px;
+        left: -6px;
     }
 
     .diamond {
         position: absolute;
         border: 1px solid var(--secondary-color-4);
-        opacity: 0.7;
+        opacity: 0.8;
         width: 4px;
         height: 4px;
         transform: rotate(45deg);
+        transition: var(--button-transition);
     }
 
     .diamond1 {
-        top: -6px;
-        left: -6px;
+        top: -8px;
+        left: -8px;
     }
 
     .diamond2 {
-        bottom: -6px;
-        right: -6px;
+        bottom: -8px;
+        right: -8px;
     }
 
     &:hover {
-        // background-color: var(--primary-color-4);
-        transition: 500ms;
+        background-color: var(--secondary-color-3);
 
-        .halo {
-            opacity: 0.9;
-        }
-
-        .halo1 {
-            top: -6px;
-            left: 6px;
-        }
-
-        .halo2 {
-            bottom: -6px;
-            left: -6px;
-        }
-
-        .diamond {
-            opacity: 0.9;
-        }
-
-        .diamond1 {
-            top: -8px;
-            left: -8px;
-        }
-
-        .diamond2 {
-            bottom: -8px;
-            right: -8px;
-        }
-    }
-
-    &:active {
         .halo {
             opacity: 1;
         }
@@ -106,5 +78,9 @@
             bottom: -4px;
             right: -4px;
         }
+    }
+
+    &:active {
+        background-color: var(--secondary-color-4);
     }
 }

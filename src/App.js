@@ -17,6 +17,7 @@ function App() {
                         <Button>Contato</Button>
                     </div>
                 </main>
+                <div className="square" />
             </div>
         </div>
     );
