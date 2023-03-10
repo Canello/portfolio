@@ -25,10 +25,43 @@ button {
     cursor: pointer;
 }
 
-// Setup
-@import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap");
-body {
-    font-family: "Rosarivo", serif;
+// Fonts
+@font-face {
+    font-family: "Beaufort for LOL Light";
+    src: url("./assets/fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Light.otf");
+}
+@font-face {
+    font-family: "Beaufort for LOL Regular";
+    src: url("./assets/fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf");
+}
+@font-face {
+    font-family: "Beaufort for LOL Medium";
+    src: url("./assets/fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Medium.otf");
+}
+@font-face {
+    font-family: "Beaufort for LOL Bold";
+    src: url("./assets/fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Beaufort for LOL Heavy";
+    src: url("./assets/fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Heavy.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Spiegel Regular";
+    src: url("./assets/fonts/Spiegel-OTF/Spiegel-OTF/Spiegel-Regular.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Spiegel SemiBold";
+    src: url("./assets/fonts/Spiegel-OTF/Spiegel-OTF/Spiegel-SemiBold.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Spiegel Bold";
+    src: url("./assets/fonts/Spiegel-OTF/Spiegel-OTF/Spiegel-Bold.otf")
+        format("opentype");
 }
 
 // Variables
@@ -45,39 +78,14 @@ body {
     --secondary-color-3: #aaa38a;
     --secondary-color-4: #f0e4b7;
     --secondary-color-5: #ffffff;
-}
 
-// Helper classes
-.color-p-1 {
-    color: var(--primary-color-1);
-}
-.color-p-2 {
-    color: var(--primary-color-2);
-}
-.color-p-3 {
-    color: var(--primary-color-3);
-}
-.color-p-4 {
-    color: var(--primary-color-4);
-}
-.color-p-5 {
-    color: var(--primary-color-5);
-}
-.color-p-6 {
-    color: var(--primary-color-6);
-}
-.color-s-1 {
-    color: var(--secondary-color-1);
-}
-.color-s-2 {
-    color: var(--secondary-color-2);
-}
-.color-s-3 {
-    color: var(--secondary-color-3);
-}
-.color-s-4 {
-    color: var(--secondary-color-4);
-}
-.color-s-5 {
-    color: var(--secondary-color-5);
+    // Fonts
+    --heading-font-light: "Beaufort for LOL Light";
+    --heading-font-regular: "Beaufort for LOL Regular";
+    --heading-font-medium: "Beaufort for LOL Medium";
+    --heading-font-bold: "Beaufort for LOL Bold";
+    --heading-font-heavy: "Beaufort for LOL Heavy";
+    --body-font-regular: "Spiegel Regular";
+    --body-font-semibold: "Spiegel SemiBold";
+    --body-font-bold: "Spiegel Bold";
 }
