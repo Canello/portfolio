@@ -1,0 +1,83 @@
+// Reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+button {
+    background-color: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+// Setup
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap");
+body {
+    font-family: "Rosarivo", serif;
+}
+
+// Variables
+:root {
+    // Colors
+    --primary-color-1: #101209;
+    --primary-color-2: #191d13;
+    --primary-color-3: #9ebe67;
+    --primary-color-4: #d3e196;
+    --primary-color-5: #e1ecd0;
+    --primary-color-6: #c4d5aa;
+    --secondary-color-1: #2e312a;
+    --secondary-color-2: #f48454;
+    --secondary-color-3: #aaa38a;
+    --secondary-color-4: #f0e4b7;
+    --secondary-color-5: #ffffff;
+}
+
+// Helper classes
+.color-p-1 {
+    color: var(--primary-color-1);
+}
+.color-p-2 {
+    color: var(--primary-color-2);
+}
+.color-p-3 {
+    color: var(--primary-color-3);
+}
+.color-p-4 {
+    color: var(--primary-color-4);
+}
+.color-p-5 {
+    color: var(--primary-color-5);
+}
+.color-p-6 {
+    color: var(--primary-color-6);
+}
+.color-s-1 {
+    color: var(--secondary-color-1);
+}
+.color-s-2 {
+    color: var(--secondary-color-2);
+}
+.color-s-3 {
+    color: var(--secondary-color-3);
+}
+.color-s-4 {
+    color: var(--secondary-color-4);
+}
+.color-s-5 {
+    color: var(--secondary-color-5);
+}
