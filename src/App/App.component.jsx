@@ -1,10 +1,12 @@
 import "./App.styles.scss";
-import { Button } from "./components/Button/Button.component";
-import { Spacer } from "./components/Spacer/Spacer.component";
+import { Button } from "../components/Button/Button.component";
+import { Spacer } from "../components/Spacer/Spacer.component";
+import { FloatingDiamonds } from "./subcomponents/FloatingDiamonds.component";
 
 function App() {
     return (
         <div className="App">
+            <FloatingDiamonds />
             <div className="home-page-border">
                 <main>
                     <h1 className="my-name">Gustavo Brandi Canello</h1>

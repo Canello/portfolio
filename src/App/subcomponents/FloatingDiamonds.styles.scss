@@ -1,0 +1,94 @@
+.FloatingDiamonds {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+    --glow-color: rgba(240, 228, 183, 0.3);
+
+    .floating-diamond {
+        border: 1px solid var(--secondary-color-4);
+        opacity: 0.5;
+        position: absolute;
+        transform: rotate(45deg);
+        aspect-ratio: 1;
+        animation: 3s linear infinite home-page-diamond-shine, 7s linear infinite home-page-diamond-float;
+    }
+
+    .diamond1 {
+        width: 34px;
+        top: 40%;
+        left: 10%;
+    }
+
+    .diamond2 {
+        width: 18px;
+        top: 80%;
+        left: 30%;
+    }
+
+    .diamond3 {
+        width: 17px;
+        top: 75%;
+        left: 50%;
+    }
+
+    .diamond4 {
+        width: 21px;
+        top: 85%;
+        left: 75%;
+    }
+
+    .diamond5 {
+        width: 17px;
+        top: 45%;
+        left: 90%;
+    }
+
+    .diamond6 {
+        width: 45px;
+        top: 60%;
+        left: 85%;
+    }
+
+    .diamond7 {
+        width: 25px;
+        top: 15%;
+        left: 65%;
+    }
+
+    .diamond8 {
+        width: 16px;
+        top: 20%;
+        left: 55%;
+    }
+}
+
+@keyframes home-page-diamond-float {
+    0% {
+        translate: 0 0;
+    }
+    50% {
+        translate: 0 100%;
+    }
+    100% {
+        translate: 0 0;
+    }
+}
+
+@keyframes home-page-diamond-shine {
+
+    0% {
+        opacity: 0.5;
+        box-shadow: none;
+    }
+
+    15% {
+        opacity: 1;
+        box-shadow: inset 0px 0px 7px 0px var(--glow-color), 0 0 20px 2px var(--glow-color);
+    }
+
+    30% {
+        opacity: 0.5;
+        box-shadow: none;
+    }
+}

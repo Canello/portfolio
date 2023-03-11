@@ -1,19 +1,10 @@
 // Reset
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 button {
@@ -73,6 +64,7 @@ button {
     --primary-color-4: #d3e196;
     --primary-color-5: #e1ecd0;
     --primary-color-6: #c4d5aa;
+    --primary-color-7: #B1D378;
     --secondary-color-1: #2e312a;
     --secondary-color-2: #f48454;
     --secondary-color-3: #aaa38a;
