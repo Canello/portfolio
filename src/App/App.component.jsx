@@ -3,6 +3,8 @@ import { Button } from "../components/Button/Button.component";
 import { Spacer } from "../components/Spacer/Spacer.component";
 import { FloatingDiamonds } from "./subcomponents/FloatingDiamonds.component";
 
+// !!!!!!!!!!!!!!!!!!!! RESPONSIVIDADE !!!!!!!!!!!!!!!!!!!!
+
 function App() {
     return (
         <div className="App">
@@ -19,7 +21,6 @@ function App() {
                         <Button>Contato</Button>
                     </div>
                 </main>
-                <div className="square" />
             </div>
         </div>
     );

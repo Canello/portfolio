@@ -19,6 +19,7 @@
 }
 
 main {
+    backdrop-filter: blur(1px);
     background-color: #191d1340;
     border: 1px solid #191d13;
     padding: 80px 160px;
@@ -37,14 +38,14 @@ main {
 }
 
 .my-name {
-    font-family: var(--heading-font-regular);
+    font-family: var(--headline-font-regular);
     color: var(--primary-color-5);
     text-align: center;
     font-size: 36px;
 }
 
 .my-title {
-    font-family: var(--heading-font-regular);
+    font-family: var(--headline-font-regular);
     color: var(--primary-color-5);
     text-align: center;
     font-size: 20px;
