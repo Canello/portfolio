@@ -1,23 +1,33 @@
 import "./FloatingDiamonds.styles.scss";
+import { randomNumberBetween } from "../functions/randomNumberBetween";
+
+const generateRandomDiamonds = (quantity) => {
+    const diamonds = [];
+
+    for (let i = 0; i < quantity; i++) {
+        const width = `${randomNumberBetween(10, 40)}px`;
+        const left = `${randomNumberBetween(0, 95)}%`;
+        const top = `${randomNumberBetween(0, 95)}%`;
+        const shineDuration = randomNumberBetween(2, 6);
+        const floatDuration = randomNumberBetween(3, 10);
+        const animation = `${shineDuration}s linear infinite home-page-diamond-shine, ${floatDuration}s ease-in-out infinite home-page-diamond-float`;
+
+        const diamond = (
+            <div
+                key={i}
+                className="floating-diamond"
+                style={{ width, left, top, animation }}
+            />
+        );
+
+        diamonds.push(diamond);
+    }
+
+    return diamonds;
+};
 
 export const FloatingDiamonds = () => {
-    return (
-        <div className="FloatingDiamonds">
-            <div className="floating-diamond diamond1" />
-            <div className="floating-diamond diamond2" />
-            <div className="floating-diamond diamond3" />
-            <div className="floating-diamond diamond4" />
-            <div className="floating-diamond diamond5" />
-            <div className="floating-diamond diamond6" />
-            <div className="floating-diamond diamond7" />
-            <div className="floating-diamond diamond8" />
-            <div className="floating-diamond diamond9" />
-            <div className="floating-diamond diamond10" />
-            <div className="floating-diamond diamond11" />
-            <div className="floating-diamond diamond12" />
-            <div className="floating-diamond diamond13" />
-            <div className="floating-diamond diamond14" />
-            <div className="floating-diamond diamond15" />
-        </div>
-    );
+    const randomDiamonds = generateRandomDiamonds(50);
+
+    return <div className="FloatingDiamonds">{randomDiamonds}</div>;
 };
