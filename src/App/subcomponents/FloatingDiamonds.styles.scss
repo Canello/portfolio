@@ -3,7 +3,8 @@
     height: 100vh;
     width: 100vw;
 
-    --glow-color: rgba(240, 228, 183, 0.3);
+    --shine-chunk: linear infinite home-page-diamond-shine;
+    --float-chunk: ease-in-out infinite home-page-diamond-float;
 
     .floating-diamond {
         border: 1px solid var(--secondary-color-4);
@@ -11,55 +12,112 @@
         position: absolute;
         transform: rotate(45deg);
         aspect-ratio: 1;
-        animation: 3s linear infinite home-page-diamond-shine, 7s linear infinite home-page-diamond-float;
+        animation: 3s var(--shine-chunk), 7s var(--float-chunk);
     }
 
     .diamond1 {
         width: 34px;
         top: 40%;
         left: 10%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond2 {
         width: 18px;
         top: 80%;
         left: 30%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond3 {
         width: 17px;
         top: 75%;
         left: 50%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond4 {
         width: 21px;
         top: 85%;
         left: 75%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond5 {
         width: 17px;
         top: 45%;
         left: 90%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond6 {
         width: 45px;
         top: 60%;
         left: 85%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond7 {
         width: 25px;
         top: 15%;
         left: 65%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 
     .diamond8 {
         width: 16px;
         top: 20%;
         left: 55%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond9 {
+        width: 12px;
+        top: 10%;
+        left: 15%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond10 {
+        width: 11px;
+        top: 15%;
+        left: 65%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond11 {
+        width: 10px;
+        top: 67%;
+        left: 14%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond12 {
+        width: 10px;
+        top: 75%;
+        left: 92%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond13 {
+        width: 12px;
+        top: 12%;
+        left: 92%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond14 {
+        width: 16px;
+        top: 77%;
+        left: 16%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
+    }
+
+    .diamond15 {
+        width: 16px;
+        top: 15%;
+        left: 25%;
+        animation: (random(5)+1)+s var(--shine-chunk), (random(10)+2)+s var(--float-chunk);
     }
 }
 
@@ -76,7 +134,6 @@
 }
 
 @keyframes home-page-diamond-shine {
-
     0% {
         opacity: 0.5;
         box-shadow: none;
@@ -84,10 +141,15 @@
 
     15% {
         opacity: 1;
-        box-shadow: inset 0px 0px 7px 0px var(--glow-color), 0 0 20px 2px var(--glow-color);
+        box-shadow: var(--default-glow);
     }
 
-    30% {
+    20% {
+        opacity: 1;
+        box-shadow: var(--default-glow);
+    }
+
+    50% {
         opacity: 0.5;
         box-shadow: none;
     }

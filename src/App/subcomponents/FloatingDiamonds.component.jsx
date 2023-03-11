@@ -11,6 +11,13 @@ export const FloatingDiamonds = () => {
             <div className="floating-diamond diamond6" />
             <div className="floating-diamond diamond7" />
             <div className="floating-diamond diamond8" />
+            <div className="floating-diamond diamond9" />
+            <div className="floating-diamond diamond10" />
+            <div className="floating-diamond diamond11" />
+            <div className="floating-diamond diamond12" />
+            <div className="floating-diamond diamond13" />
+            <div className="floating-diamond diamond14" />
+            <div className="floating-diamond diamond15" />
         </div>
     );
 };
