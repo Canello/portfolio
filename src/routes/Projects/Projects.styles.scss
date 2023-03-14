@@ -1,3 +1,18 @@
 .Projects {
-    
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scroll-bar-width: none;
+    &::-webkit-scrollbar {
+        width: 0 !important;
+    }
+}
+
+.projects-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
