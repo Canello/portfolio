@@ -1,15 +1,17 @@
 .CloseIcon {
     --diamond-center: 14px;
-    --diamond-expanded-position: -14px;
+    --diamond-expanded-position: 4px;
 
     position: fixed;
-    left: 60px;
-    top: 60px;
-    width: 30px;
-    height: 30px;
+    left: 48px;
+    top: 48px;
+    width: 52px;
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(25, 29, 19, 0.8);
+    z-index: 9;
 
     .diamond {
         width: 4px;

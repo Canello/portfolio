@@ -11,12 +11,9 @@ export const PopUp = ({ popUp }) => {
     return (
         <div className="PopUp" style={{ zIndex: z }}>
             <div className="pop-up-wrapper">
-                {/* <div className="pop-up-diamond pop-up-diamond1" />
-                <div className="pop-up-diamond pop-up-diamond2" />
-                <div className="pop-up-diamond pop-up-diamond3" /> */}
                 <h2 className="pop-up-title">{title}</h2>
                 <CloseIcon onClick={() => closePopUp(id)} />
-                <Spacer y="72px" />
+                <Spacer y="40px" />
                 {content}
             </div>
         </div>

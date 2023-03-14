@@ -1,18 +1,18 @@
 .Projects {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scroll-bar-width: none;
-    &::-webkit-scrollbar {
-        width: 0 !important;
-    }
 }
 
 .projects-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    justify-items: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+
+    @media only screen and (max-width: 500px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }

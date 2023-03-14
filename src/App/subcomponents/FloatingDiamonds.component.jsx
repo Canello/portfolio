@@ -1,5 +1,5 @@
 import "./FloatingDiamonds.styles.scss";
-import { randomNumberBetween } from "../functions/randomNumberBetween";
+import { randomNumberBetween } from "../functions/randomNumberBetween.function";
 
 const generateRandomDiamonds = (quantity) => {
     const diamonds = [];

@@ -10,11 +10,18 @@
         position: relative;
         width: calc(100% - 40px);
         height: calc(100% - 40px);
-        padding: 40px;
+        padding: 40px 40px 0px 40px;
         background-color: var(--primary-color-2);
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scroll-bar-width: none;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
     }
 
     .pop-up-title {
