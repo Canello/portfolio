@@ -27,7 +27,7 @@ const generateRandomDiamonds = (quantity) => {
 };
 
 export const FloatingDiamonds = () => {
-    const randomDiamonds = generateRandomDiamonds(50);
+    const randomDiamonds = generateRandomDiamonds(70);
 
     return <div className="FloatingDiamonds">{randomDiamonds}</div>;
 };

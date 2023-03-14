@@ -1,11 +1,12 @@
 import "./Button.styles.scss";
 
 export const Button = ({ children, variant = "primary", ...otherProps }) => {
-    const classes = otherProps.className ?? "";
+    const additionalClasses = otherProps.className ?? "";
+    otherProps.className = `Button ${additionalClasses}`;
 
     if (variant === "primary") {
         return (
-            <button className={`Button ${classes}`}>
+            <button {...otherProps}>
                 <div className="halo halo1" />
                 <div className="halo halo2" />
                 <div className="diamond diamond1" />

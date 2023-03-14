@@ -1,11 +1,16 @@
 import "./App.styles.scss";
 import { Button } from "../components/Button/Button.component";
-import { Spacer } from "../components/Spacer/Spacer.component";
 import { FloatingDiamonds } from "./subcomponents/FloatingDiamonds.component";
+import { useContext } from "react";
+import { PopUpContext } from "../contexts/PopUpContext.context";
+import { Projects } from "../routes/Projects/Projects.component";
 
-// !!!!!!!!!!!!!!!!!!!! RESPONSIVIDADE !!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR REACT ROUTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR ANIMAÇÕES DE ABERTURA DE POP UP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 function App() {
+    const { popUpElements, openPopUp } = useContext(PopUpContext);
+
     return (
         <div className="App">
             <FloatingDiamonds />
@@ -14,14 +19,22 @@ function App() {
                     <h1 className="my-name">Gustavo Brandi Canello</h1>
                     <h2 className="my-title">Dev full-stack & Designer</h2>
                     <div className="main-buttons-container">
-                        <Button>Informações</Button>
-                        <Spacer x="32px" />
-                        <Button>Projetos</Button>
-                        <Spacer x="32px" />
-                        <Button>Contato</Button>
+                        <Button className="home-page-button">
+                            Informações
+                        </Button>
+                        <Button
+                            className="home-page-button"
+                            onClick={() =>
+                                openPopUp("projects", 1, <Projects />)
+                            }
+                        >
+                            Projetos
+                        </Button>
+                        <Button className="home-page-button">Contato</Button>
                     </div>
                 </main>
             </div>
+            {popUpElements}
         </div>
     );
 }

@@ -1,9 +1,9 @@
 .Button {
     --button-transition:
-        top 100ms ease-in-out,
-        bottom 100ms ease-in-out,
-        left 100ms ease-in-out,
-        right 100ms ease-in-out,
+        top 100ms ease-in,
+        bottom 100ms ease-in,
+        left 100ms ease-in,
+        right 100ms ease-in,
         opacity 100ms linear,
         background-color 100ms linear;
     --glow:
@@ -17,8 +17,6 @@
     position: relative;
     background-color: var(--primary-color-3);
     color: var(--primary-color-2);
-    height: 48px;
-    width: 200px;
     font-family: var(--headline-font-medium);
     transition: var(--button-transition);
 
