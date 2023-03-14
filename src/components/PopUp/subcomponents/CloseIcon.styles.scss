@@ -1,0 +1,81 @@
+.CloseIcon {
+    --diamond-center: 14px;
+    --diamond-expanded-position: -14px;
+
+    position: fixed;
+    left: 60px;
+    top: 60px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .diamond {
+        width: 4px;
+        height: 4px;
+        transform: rotate(45deg);
+        border: 1px solid var(--secondary-color-4);
+        position: absolute;
+        opacity: 0;
+        transition:
+            left 100ms ease-out,
+            right 100ms ease-out,
+            top 100ms ease-out,
+            bottom 100ms ease-out,
+            close-icon-unhover 100ms linear;
+    }
+
+    .diamond1 {
+        top: var(--diamond-center);
+    }
+
+    .diamond2 {
+        right: var(--diamond-center);
+    }
+
+    .diamond3 {
+        bottom: var(--diamond-center);
+    }
+
+    .diamond4 {
+        left: var(--diamond-center);
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .diamond {
+            opacity: 1;
+            // transition: close-icon-hover 100ms linear;
+        }
+
+        .diamond1 {
+            top: var(--diamond-expanded-position);
+        }
+
+        .diamond2 {
+            right: var(--diamond-expanded-position);
+        }
+    
+        .diamond3 {
+            bottom: var(--diamond-expanded-position);
+        }
+    
+        .diamond4 {
+            left: var(--diamond-expanded-position);
+        }
+    }
+}
+
+@keyframes close-icon-hover {
+    0% {
+        opacity: 1;
+    }
+}
+
+@keyframes close-icon-unhover {
+    99% {
+        opacity: 0;
+    }
+}

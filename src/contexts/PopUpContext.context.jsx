@@ -7,21 +7,19 @@ export const PopUpContextProvider = ({ children }) => {
     const [popUps, setPopUps] = useState([]);
     const [popUpElements, setPopUpElements] = useState([]);
 
-    const openPopUp = (id, z, content) => {
-        const newPopUp = { id, z, content };
+    const openPopUp = (id, z, title, content) => {
+        const newPopUp = { id, z, title, content };
         setPopUps([...popUps, newPopUp]);
     };
 
     const closePopUp = (id) => {
-        const filteredPopUps = popUps.filter((popUp) => popUp.key !== id);
+        const filteredPopUps = popUps.filter((popUp) => popUp.id !== id);
         setPopUps(filteredPopUps);
     };
 
     const generatePopUpElements = () => {
         const newElements = popUps.map((popUp) => (
-            <PopUp key={popUp.id} z={popUp.z}>
-                {popUp.content}
-            </PopUp>
+            <PopUp key={popUp.id} popUp={popUp} />
         ));
         setPopUpElements(newElements);
     };

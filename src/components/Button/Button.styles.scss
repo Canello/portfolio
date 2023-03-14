@@ -1,9 +1,9 @@
 .Button {
     --button-transition:
-        top 100ms ease-in,
-        bottom 100ms ease-in,
-        left 100ms ease-in,
-        right 100ms ease-in,
+        top 100ms ease-out,
+        bottom 100ms ease-out,
+        left 100ms ease-out,
+        right 100ms ease-out,
         opacity 100ms linear,
         background-color 100ms linear;
     --glow:
