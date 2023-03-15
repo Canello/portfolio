@@ -18,13 +18,6 @@ a {
     text-decoration: none;
 }
 
-// Setup
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
-}
-
 // Fonts
 @font-face {
     font-family: "Beaufort for LOL Light";
@@ -91,6 +84,21 @@ body {
     --body-font-bold: "Spiegel Bold";
 }
 
+// Setup
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+::-moz-selection {
+    background: var(--secondary-color-3);
+}
+  
+::selection {
+    background: var(--secondary-color-3);
+}
+
 // Helper Classes
 .text-section-title {
     font-family: var(--headline-font-regular);
@@ -110,10 +118,10 @@ body {
     font-size: 14px;
 }
 
-.test-section-link {
+.text-section-link {
     font-family: var(--body-font-regular);
     color: var(--secondary-color-3);
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: underline;
 
     &:hover {

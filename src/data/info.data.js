@@ -11,6 +11,7 @@ export const INFO = {
         "AWS",
         "Git",
         "Heroku",
+        "Postman",
         "Figma",
         "Photoshop",
         "Excel",

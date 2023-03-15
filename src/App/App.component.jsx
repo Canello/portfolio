@@ -7,7 +7,7 @@ import { Projects } from "../routes/Projects/Projects.component";
 import { Contact } from "../routes/Contact/Contact.component";
 import { Info } from "../routes/Info/Info.component";
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINALIZAR DEMAIS ROTAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINALIZAR ROTAS DE PROJETOS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR ANIMAÇÕES DE ABERTURA DE POP UP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 function App() {

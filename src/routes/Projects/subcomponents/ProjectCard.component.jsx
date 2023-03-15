@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { Button } from "../../../components/Button/Button.component";
 import { Spacer } from "../../../components/Spacer/Spacer.component";
+import { PopUpContext } from "../../../contexts/PopUpContext.context";
 import "./ProjectCard.styles.scss";
 
 export const ProjectCard = ({ project }) => {
-    const { title, subtitle, thumbnail } = project;
+    const { id, title, subtitle, thumbnail, content } = project;
+    const { openPopUp } = useContext(PopUpContext);
 
     return (
         <div className="ProjectCard">
@@ -19,7 +22,12 @@ export const ProjectCard = ({ project }) => {
                 <Spacer y="4px" />
                 <span className="subtitle">{subtitle}</span>
                 <Spacer y="20px" />
-                <Button className="see-more">Ver mais</Button>
+                <Button
+                    className="see-more"
+                    onClick={() => openPopUp(id, 2, title, content)}
+                >
+                    Ver
+                </Button>
             </div>
         </div>
     );
