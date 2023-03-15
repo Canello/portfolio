@@ -4,6 +4,7 @@ import { FloatingDiamonds } from "./subcomponents/FloatingDiamonds.component";
 import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext.context";
 import { Projects } from "../routes/Projects/Projects.component";
+import { Contact } from "../routes/Contact/Contact.component";
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINALIZAR DEMAIS ROTAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR ANIMAÇÕES DE ABERTURA DE POP UP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13,7 +14,8 @@ function App() {
     const openInfoPopUp = () => openPopUp("info", 1, "Informações", <></>);
     const openProjectsPopUp = () =>
         openPopUp("projects", 1, "Projetos", <Projects />);
-    const openContactPopUp = () => openPopUp("contact", 1, "Contato", <></>);
+    const openContactPopUp = () =>
+        openPopUp("contact", 1, "Contato", <Contact />);
 
     return (
         <div className="App">
