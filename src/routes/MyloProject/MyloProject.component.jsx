@@ -16,7 +16,7 @@ export const MyloProject = () => {
         <div className="MyloProject">
             {/* Imagem */}
             <div className="cover-container">
-                <img className="cover" src={myloCover} />
+                <img className="cover" src={myloCover} alt="Mylo app" />
             </div>
             <Spacer y="40px" />
             {/* ----------------------------------------------------------------------- */}

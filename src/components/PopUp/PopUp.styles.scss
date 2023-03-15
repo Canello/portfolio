@@ -38,5 +38,7 @@
         font-family: var(--headline-font-regular);
         color: var(--secondary-color-3);
         font-size: 48px;
+        word-break: break-all;
+        text-align: center;
     }
 }

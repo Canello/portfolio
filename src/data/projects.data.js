@@ -3,6 +3,7 @@ import portfolioImg from "../assets/images/portfolio-card.png";
 import mazeImg from "../assets/images/maze-card.png";
 import weeevImg from "../assets/images/weeev-card.png";
 import { MyloProject } from "../routes/MyloProject/MyloProject.component";
+import { MazeProject } from "../routes/MazeProject/MazeProject.component";
 
 export const PROJECTS = {
     mylo: {
@@ -46,6 +47,16 @@ export const PROJECTS = {
         subtitle:
             "Gerador de labirintos jogáveis, usando depth first search e backtracking.",
         thumbnail: mazeImg,
+        content: <MazeProject />,
+        skills: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "AWS",
+            "Orientação a Objetos",
+            "Depth First Search",
+            "Backtracking",
+        ],
     },
     weeev: {
         id: "weeev",
