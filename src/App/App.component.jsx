@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext.context";
 import { Projects } from "../routes/Projects/Projects.component";
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEMOIZAR FLOATINGDIAMONDS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINALIZAR DEMAIS ROTAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR ANIMAÇÕES DE ABERTURA DE POP UP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 function App() {

@@ -1,3 +1,4 @@
+import { memo } from "react";
 import "./FloatingDiamonds.styles.scss";
 import { randomNumberBetween } from "../functions/randomNumberBetween.function";
 
@@ -26,8 +27,8 @@ const generateRandomDiamonds = (quantity) => {
     return diamonds;
 };
 
-export const FloatingDiamonds = () => {
+export const FloatingDiamonds = memo(() => {
     const randomDiamonds = generateRandomDiamonds(70);
 
     return <div className="FloatingDiamonds">{randomDiamonds}</div>;
-};
+});
