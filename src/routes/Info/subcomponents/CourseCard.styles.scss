@@ -1,0 +1,32 @@
+.CourseCard {
+    padding: 20px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    background-color: var(--secondary-color-1);
+    border: 1px solid rgba(240, 228, 183, 0.5);
+
+    .links-container {
+        display: flex;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .name {
+        font-family: var(--body-font-regular);
+        color: var(--primary-color-5);
+        font-size: 14px;
+    }
+
+    .link {
+        font-size: 14px;
+        color: var(--primary-color-4);
+        font-family: var(--body-font-regular);
+        text-decoration: underline;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

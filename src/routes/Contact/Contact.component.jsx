@@ -7,9 +7,8 @@ export const Contact = () => {
     return (
         <div className="Contact">
             <span className="text-info">
-                +55 11 96049 4096
-                <br />
-                gustavobrandicanello@gmail.com
+                gustavobrandicanello@gmail.com&nbsp;&nbsp;|&nbsp;&nbsp;+55 11
+                96049 4096
             </span>
             <Spacer y="48px" />
             <div className="info-cards-container">

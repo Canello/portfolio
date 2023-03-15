@@ -2,15 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 28px;
+    padding: 24px;
     margin-bottom: 28px;
     margin-right: 28px;
     background-color: var(--secondary-color-1);
     border: 1px solid rgba(240, 228, 183, 0.5);
 
     .icon {
-        height: 44px;
-        width: 44px;
+        height: 40px;
+        width: 40px;
     }
 
     .info-container {
@@ -24,14 +24,15 @@
         }
         
         .username {
-            font-size: 16px;
+            font-size: 14px;
             color: var(--primary-color-4);
             font-family: var(--body-font-regular);
             text-decoration: underline;
-        }
-    }
 
-    &:hover {
-        cursor: pointer;
+            &:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
     }
 }

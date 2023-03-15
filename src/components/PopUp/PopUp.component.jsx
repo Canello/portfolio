@@ -10,6 +10,7 @@ export const PopUp = ({ popUp }) => {
 
     return (
         <div className="PopUp" style={{ zIndex: z }}>
+            <div className="pop-up-background" onClick={() => closePopUp(id)} />
             <div className="pop-up-wrapper">
                 <h2 className="pop-up-title">{title}</h2>
                 <CloseIcon onClick={() => closePopUp(id)} />

@@ -5,13 +5,14 @@ import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext.context";
 import { Projects } from "../routes/Projects/Projects.component";
 import { Contact } from "../routes/Contact/Contact.component";
+import { Info } from "../routes/Info/Info.component";
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINALIZAR DEMAIS ROTAS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR ANIMAÇÕES DE ABERTURA DE POP UP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 function App() {
     const { popUpElements, openPopUp } = useContext(PopUpContext);
-    const openInfoPopUp = () => openPopUp("info", 1, "Informações", <></>);
+    const openInfoPopUp = () => openPopUp("info", 1, "Informações", <Info />);
     const openProjectsPopUp = () =>
         openPopUp("projects", 1, "Projetos", <Projects />);
     const openContactPopUp = () =>

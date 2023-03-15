@@ -11,7 +11,9 @@ export const ContactCard = ({ media }) => {
             <div className="info-container">
                 <span className="media-name">{name}</span>
                 <Spacer y="4px" />
-                <span className="username">{username}</span>
+                <a className="username" href={link} target="_blank">
+                    {username}
+                </a>
             </div>
         </div>
     );

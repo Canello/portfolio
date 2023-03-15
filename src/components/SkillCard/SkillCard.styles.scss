@@ -1,0 +1,15 @@
+.SkillCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    background-color: var(--secondary-color-1);
+    border: 1px solid rgba(240, 228, 183, 0.5);
+
+    .skill {
+        font-family: var(--body-font-regular);
+        color: var(--secondary-color-4);
+    }
+}
