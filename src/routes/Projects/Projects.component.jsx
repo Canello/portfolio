@@ -1,6 +1,7 @@
 import "./Projects.styles.scss";
 import { ProjectCard } from "./subcomponents/ProjectCard.component";
 import { PROJECTS } from "../../data/projects.data";
+import { Spacer } from "../../components/Spacer/Spacer.component";
 
 export const Projects = () => {
     return (
@@ -11,6 +12,7 @@ export const Projects = () => {
                 <ProjectCard project={PROJECTS.maze} />
                 <ProjectCard project={PROJECTS.weeev} />
             </div>
+            <Spacer y="40px" />
         </div>
     );
 };
