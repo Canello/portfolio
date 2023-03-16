@@ -109,19 +109,19 @@ body {
 .text-section-text {
     font-family: var(--body-font-regular);
     color: var(--secondary-color-3);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .text-section-subtitle {
     font-family: var(--body-font-regular);
     color: var(--primary-color-5);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .text-section-link {
     font-family: var(--body-font-regular);
     color: var(--secondary-color-3);
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: underline;
 
     &:hover {
