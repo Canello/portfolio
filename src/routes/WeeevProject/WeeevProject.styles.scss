@@ -1,4 +1,4 @@
-.MazeProject {
+.WeeevProject {
     width: 100%;
 
     .cover-container {
@@ -16,5 +16,10 @@
     .cards-container {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 740px;
     }
 }

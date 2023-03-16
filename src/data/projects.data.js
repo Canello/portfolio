@@ -4,6 +4,7 @@ import mazeImg from "../assets/images/maze-card.png";
 import weeevImg from "../assets/images/weeev-card.png";
 import { MyloProject } from "../routes/MyloProject/MyloProject.component";
 import { MazeProject } from "../routes/MazeProject/MazeProject.component";
+import { WeeevProject } from "../routes/WeeevProject/WeeevProject.component";
 
 export const PROJECTS = {
     mylo: {
@@ -29,6 +30,7 @@ export const PROJECTS = {
             "Context API",
             "Hooks",
             "MVC",
+            "API REST",
             "Postman",
             "Figma",
             "Excel",
@@ -63,5 +65,24 @@ export const PROJECTS = {
         title: "Weeev",
         subtitle: "Web app para compartilhar ideias por link.",
         thumbnail: weeevImg,
+        content: <WeeevProject />,
+        skills: [
+            "React",
+            "SCSS",
+            "Node.js",
+            "Express",
+            "PostgreSQL",
+            "AWS",
+            "Heroku",
+            "React Router",
+            "JWT",
+            "Context API",
+            "Hooks",
+            "MVC",
+            "API REST",
+            "Postman",
+            "Figma",
+            "Design System",
+        ],
     },
 };
