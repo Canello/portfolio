@@ -8,9 +8,9 @@ export const Projects = () => {
         <div className="Projects">
             <div className="projects-container">
                 <ProjectCard project={PROJECTS.mylo} />
-                <ProjectCard project={PROJECTS.portfolio} />
                 <ProjectCard project={PROJECTS.maze} />
                 <ProjectCard project={PROJECTS.weeev} />
+                <ProjectCard project={PROJECTS.portfolio} />
             </div>
             <Spacer y="40px" />
         </div>

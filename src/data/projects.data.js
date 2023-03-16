@@ -5,6 +5,7 @@ import weeevImg from "../assets/images/weeev-card.png";
 import { MyloProject } from "../routes/MyloProject/MyloProject.component";
 import { MazeProject } from "../routes/MazeProject/MazeProject.component";
 import { WeeevProject } from "../routes/WeeevProject/WeeevProject.component";
+import { PortfolioProject } from "../routes/PortfolioProject/PortfolioProject.component";
 
 export const PROJECTS = {
     mylo: {
@@ -42,6 +43,8 @@ export const PROJECTS = {
         title: "Portfolio",
         subtitle: "Esse portfolio aqui. Inception!",
         thumbnail: portfolioImg,
+        content: <PortfolioProject />,
+        skills: ["React", "SCSS", "AWS", "Context API", "Hooks", "Figma"],
     },
     maze: {
         id: "maze",
