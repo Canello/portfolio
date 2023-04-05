@@ -5,6 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: pop-up-opening 150ms linear;
+
+    .closing {
+        animation: pop-up-closing 150ms linear;
+    }
 
     .pop-up-background {
         width: 100%;
@@ -40,5 +45,25 @@
         font-size: 48px;
         word-break: break-all;
         text-align: center;
+    }
+
+    @keyframes pop-up-opening {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes pop-up-closing {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
     }
 }
