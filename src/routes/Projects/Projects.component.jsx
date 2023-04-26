@@ -8,6 +8,7 @@ export const Projects = () => {
         <div className="Projects">
             <div className="projects-container">
                 <ProjectCard project={PROJECTS.mylo} />
+                <ProjectCard project={PROJECTS.englishBot} />
                 <ProjectCard project={PROJECTS.maze} />
                 <ProjectCard project={PROJECTS.weeev} />
                 <ProjectCard project={PROJECTS.portfolio} />

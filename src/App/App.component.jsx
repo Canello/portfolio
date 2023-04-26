@@ -7,8 +7,6 @@ import { Projects } from "../routes/Projects/Projects.component";
 import { Contact } from "../routes/Contact/Contact.component";
 import { Info } from "../routes/Info/Info.component";
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ADICIONAR ANIMAÇÕES DE ABERTURA DE POP UP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 function App() {
     const { popUpElements, openPopUp } = useContext(PopUpContext);
     const openInfoPopUp = () => openPopUp("info", 1, "Informações", <Info />);
