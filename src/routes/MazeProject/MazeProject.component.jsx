@@ -28,7 +28,7 @@ export const MazeProject = () => {
             <h3 className="text-section-title">Resumo</h3>
             <span className="text-section-text">
                 Um algoritmo de geração de labirintos com animação. Feito usando
-                depth first search e backtraking.
+                depth first search.
                 <br />
                 É possível jogar no labirinto depois que ele for gerado — o
                 objetivo é escapar antes que o tempo acabe.

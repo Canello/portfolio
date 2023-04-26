@@ -14,7 +14,7 @@ const generateCourseCards = () =>
 
 export const Info = () => {
     const skillCards = generateSkillCards();
-    const couseCards = generateCourseCards();
+    const courseCards = generateCourseCards();
 
     return (
         <div className="Info">
@@ -28,7 +28,7 @@ export const Info = () => {
                 desenvolvido por mim, que foi acelerada pela FGV Ventures.
                 <br />
                 Atualmente, busco vaga como desenvolvedor front/back-end, com as
-                tecnologias: React, React Native e Node.js;
+                tecnologias: React, React Native e Node.js.
             </span>
             <Spacer y="40px" />
             {/* ----------------------------------------------------------------------- */}
@@ -51,7 +51,7 @@ export const Info = () => {
             {/* Cursos e certificados */}
             <h3 className="text-section-title">Cursos e certificados</h3>
             <Spacer y="8px" />
-            <div className="cards-container">{couseCards}</div>
+            <div className="cards-container">{courseCards}</div>
             <Spacer y="40px" />
             {/* ----------------------------------------------------------------------- */}
         </div>
