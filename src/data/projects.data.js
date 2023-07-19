@@ -61,7 +61,6 @@ export const PROJECTS = {
             "AWS",
             "Orientação a Objetos",
             "Depth First Search",
-            "Backtracking",
         ],
     },
     weeev: {
@@ -91,7 +90,7 @@ export const PROJECTS = {
     },
     englishBot: {
         id: "englishBot",
-        title: "English Teacher Bot",
+        title: "Caitlyn",
         subtitle: "Bot para treinar conversação em inglês. Feito com ChatGPT.",
         thumbnail: englishBotImg,
         content: <EnglishBotProject />,

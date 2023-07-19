@@ -21,7 +21,7 @@ function App() {
             <div className="home-page-border">
                 <main>
                     <h1 className="my-name">Gustavo Brandi Canello</h1>
-                    <h2 className="my-title">Dev full-stack</h2>
+                    <h2 className="my-title">Dev Full-Stack</h2>
                     <div className="main-buttons-container">
                         <Button
                             className="home-page-button"

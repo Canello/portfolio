@@ -27,7 +27,7 @@ export const PortfolioProject = () => {
             {/* Resumo */}
             <h3 className="text-section-title">Resumo</h3>
             <span className="text-section-text">
-                Esse portfolio aqui feito com React!
+                Esse portfolio aqui. Feito com React.
             </span>
             <Spacer y="40px" />
             {/* ----------------------------------------------------------------------- */}

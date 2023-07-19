@@ -41,7 +41,7 @@ export const EnglishBotProject = () => {
             <h3 className="text-section-title">Links</h3>
             <a
                 className="text-section-link"
-                href="https://www.veewi.fun/"
+                href="https://www.caitlyn.chat/"
                 target="_blank"
             >
                 Web app
@@ -49,7 +49,7 @@ export const EnglishBotProject = () => {
             <br />
             <a
                 className="text-section-link"
-                href="https://github.com/Canello/language"
+                href="https://github.com/Canello/language-client"
                 target="_blank"
             >
                 GitHub front-end
@@ -57,7 +57,7 @@ export const EnglishBotProject = () => {
             <br />
             <a
                 className="text-section-link"
-                href="https://github.com/Canello/language-api"
+                href="https://github.com/Canello/language-server"
                 target="_blank"
             >
                 GitHub back-end
