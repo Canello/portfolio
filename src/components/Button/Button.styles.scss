@@ -60,6 +60,10 @@
         right: calc(-1 * var(--diamond-offset));
     }
 
+    div {
+        pointer-events: none;
+    }
+
     &:hover, &:active {
         background-color: var(--primary-color-7);
 
