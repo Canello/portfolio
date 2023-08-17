@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Beaufort for LOL Light";
+    src: url("./fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Light.otf");
+}
+@font-face {
+    font-family: "Beaufort for LOL Regular";
+    src: url("./fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf");
+}
+@font-face {
+    font-family: "Beaufort for LOL Medium";
+    src: url("./fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Medium.otf");
+}
+@font-face {
+    font-family: "Beaufort for LOL Bold";
+    src: url("./fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Beaufort for LOL Heavy";
+    src: url("./fonts/BeaufortForLoL-OTF/BeaufortForLoL-OTF/BeaufortforLOL-Heavy.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Spiegel Regular";
+    src: url("./fonts/Spiegel-OTF/Spiegel-OTF/Spiegel-Regular.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Spiegel SemiBold";
+    src: url("./fonts/Spiegel-OTF/Spiegel-OTF/Spiegel-SemiBold.otf")
+        format("opentype");
+}
+@font-face {
+    font-family: "Spiegel Bold";
+    src: url("./fonts/Spiegel-OTF/Spiegel-OTF/Spiegel-Bold.otf")
+        format("opentype");
+}
